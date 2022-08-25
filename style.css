@@ -1,0 +1,483 @@
+/* general rules for the document */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DynaPuff&family=Inder&family=Poppins:ital@0;1&display=swap");
+
+body {
+  padding: 0%;
+  margin: 0%;
+  border: 0ch;
+  box-sizing: border-box;
+  background-image: url(./images/scattered-forcefields.png);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: red;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 500px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500px;
+}
+h3 {
+  text-align: center;
+}
+
+.one {
+  font-weight: bold;
+  width: 50%;
+  height: 7%;
+  background-color: red;
+  border-color: transparent;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-top: 10%;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* specific styling */
+
+/* styling for header */
+header div {
+  position: absolute;
+  right: 0px;
+  border: 0ch;
+  width: inherit;
+  height: inherit;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: grey;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 3px grey;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* darkmode */
+.dark-mode {
+  color: white;
+  background-image: url(./images/confetti-doodles.png);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+/* styling for call-to-action */
+
+section {
+  padding: 20px;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 5%;
+}
+
+div {
+  background-color: white;
+  height: 100%;
+  border: 5px solid red;
+  animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Call-to-action {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c";
+  padding: 0%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+  grid-template-rows: 180px;
+}
+
+.img-container {
+  grid-area: a;
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  border: 0ch;
+  margin: 0% 0% 0% 50%;
+}
+.me {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.first-text-container {
+  grid-area: b;
+  text-align: center;
+  font-family: "Inder", sans-serif;
+  border: 0ch;
+  background-color: inherit;
+}
+
+span {
+  color: black;
+}
+
+.second-text-container {
+  grid-area: c;
+  text-align: center;
+  font-family: "DynaPuff", cursive;
+  border: 0ch;
+  background-color: inherit;
+}
+
+/* styling for summary */
+
+.resume-summary {
+  text-align: center;
+
+  background-image: url(./images/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: summary 15s infinite ease-in-out;
+}
+
+@keyframes summary {
+  0% {
+    background-image: url(./images/1.jpg);
+  }
+  50% {
+    background-image: url(./images/3.jpg);
+  }
+  100% {
+    background-image: url(./images/6.jpg);
+  }
+}
+#summary {
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+#summary p {
+  margin: 10%;
+}
+/* styling for projects */
+
+.projects {
+  background-image: url(./images/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: projects 15s infinite ease-in-out;
+}
+@keyframes projects {
+  0% {
+    background-image: url(./images/2.jpg);
+  }
+  50% {
+    background-image: url(./images/4.jpg);
+  }
+  100% {
+    background-image: url(./images/5.jpg);
+  }
+}
+
+#work {
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+}
+.huddle {
+  background-image: url(./images/huddle.png);
+  background-position: center;
+  background-size: contain;
+  border: 0ch;
+  margin: 5%;
+  width: 40%;
+}
+.form {
+  position: relative;
+  background-image: url(./images/form.png);
+  background-position: center;
+  background-size: contain;
+  border: 0ch;
+  margin: 5%;
+  width: 40%;
+}
+.sample {
+  position: absolute;
+  top: -10%;
+  left: -45%;
+}
+/* styling for skills */
+
+.skills {
+  background-image: url(./images/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: skills 15s infinite ease-in-out;
+}
+
+@keyframes skills {
+  0% {
+    background-image: url(./images/3.jpg);
+  }
+
+  50% {
+    background-image: url(./images/1.jpg);
+  }
+
+  100% {
+    background-image: url(./images/4.jpg);
+  }
+}
+
+#stack {
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+#stack p {
+  margin: 5%;
+}
+/* styling for experience */
+
+.experience {
+  background-image: url(./images/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: experience 15s infinite ease-in-out;
+  margin: 0%;
+}
+
+@keyframes experience {
+  0% {
+    background-image: url(./images/6.jpg);
+  }
+
+  50% {
+    background-image: url(./images/1.jpg);
+  }
+
+  100% {
+    background-image: url(./images/2.jpg);
+  }
+}
+
+#real-projects {
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+#real-projects p {
+  margin: 5%;
+}
+
+/* styling for social-icons */
+.social-icons {
+  height: inherit;
+  width: inherit;
+  margin: 0%;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 15%;
+  margin-left: 0%;
+}
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 22px 10px 10px;
+  border-radius: 5px;
+  color: red;
+}
+#contact-me {
+  background: inherit;
+  border: 0ch;
+  padding: 10px;
+  margin-left: 40%;
+}
+.two {
+  font-weight: bold;
+  text-align: center;
+  height: 8vh;
+  width: 35%;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: red;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling for footer */
+footer {
+  text-align: center;
+  background-color: gray;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    font-size: 10px;
+  }
+
+  .img-container {
+    grid-area: a;
+    border-radius: 50%;
+    height: 20%;
+    width: 100%;
+    border: 0ch;
+    margin: 0% 0% 0% 20%;
+  }
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+  section {
+    padding: 20px;
+    margin-left: 0px;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 5%;
+  }
+  .fa {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  #summary {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .Call-to-action {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "a c";
+    margin: 5%;
+    grid-template-rows: 120px;
+  }
+  .first-text-container {
+    margin: 0%;
+    border: 0ch;
+    padding: 0%;
+  }
+  .second-text-container {
+    margin: 0%;
+    border: 0ch;
+    padding: 0%;
+  }
+  #work {
+    width: 70%;
+  }
+  #stack {
+    width: 70%;
+  }
+  #real-projects {
+    width: 70%;
+  }
+  #contact-me {
+    margin-left: 20%;
+  }
+  .two {
+    height: 5vh;
+    width: 80%;
+  }
+  .one {
+    margin-left: 0;
+    width: 100%;
+    height: 4vh;
+  }
+  .sample {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}

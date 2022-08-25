@@ -1,0 +1,5 @@
+darkmode-color -- 000000
+lightmode-color -- ffffff
+divcard-color -- e5e5e5
+title-color -- fca311
+text-color -- 14213d
