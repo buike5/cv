@@ -127,11 +127,8 @@ input:checked + .slider:before {
 }
 /* darkmode */
 .dark-mode {
-
-
-  background-color:#0D1117;
-  background-image:none;
-
+  background-color: darkolivegreen;
+  background-image: none;
 }
 
 /* styling for call-to-action */
@@ -182,6 +179,7 @@ div {
 .me {
   width: 100%;
   height: 100%;
+  border: 0ch;
   border-radius: inherit;
 }
 .first-text-container {
@@ -406,7 +404,7 @@ footer {
     margin: 0%;
     padding: 0%;
     border: 0;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .img-container {
@@ -422,7 +420,7 @@ footer {
     font-size: 25px;
   }
   section {
-    padding: 20px;
+    padding: 10px;
     margin-left: 0px;
     width: 100%;
     height: 40vh;
@@ -433,8 +431,8 @@ footer {
     margin-left: 0px;
   }
   #summary {
-    width: 70%;
-    padding: 10px;
+    width: 80%;
+    padding-top: 2px;
   }
 
   .Call-to-action {
@@ -456,13 +454,14 @@ footer {
     padding: 0%;
   }
   #work {
-    width: 70%;
+    width: 80%;
   }
   #stack {
-    width: 70%;
+    width: 80%;
   }
   #real-projects {
-    width: 70%;
+    padding-top: 2px;
+    width: 80%;
   }
   #contact-me {
     margin-left: 20%;
@@ -479,5 +478,14 @@ footer {
   .sample {
     margin-top: 20px;
     font-weight: bold;
+  }
+  .resume-summary,.skills,.experience,.projects{
+     background-image: none;
+     animation: none;
+  }
+  h3{
+    margin: 0%;
+    padding: 0%;
+  border: 0;
   }
 }
