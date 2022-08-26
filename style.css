@@ -127,11 +127,11 @@ input:checked + .slider:before {
 }
 /* darkmode */
 .dark-mode {
-  /* color: white; */
-  background-image: url(./images/confetti-doodles.png);
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
+
+
+  background-color:#0D1117;
+  background-image:none;
+
 }
 
 /* styling for call-to-action */
